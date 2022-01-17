@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Margarita Puzanova](https://up.htmlacademy.ru/htmlcss/33/user/1712049).
-* Наставник: `Неизвестно`.
+* Наставник: [Маргарита Попова](https://htmlacademy.ru/profile/lipsum).
 
 ---
 
