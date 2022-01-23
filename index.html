@@ -5,8 +5,214 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <header class="main-header">
+      <img class="header-logo" src="" alt="Логотип интернет-магазина "Device">
+      <nav class="navigation">
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Войти
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Сравнить
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Корзина
+              </span>
+            </a>
+          </li>
+        </ul>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="delivery.html">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="warranty.html">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <main class="main-index">
+      <h1 class="visually-hidden">Интернет-магазин современных гаджетов "Device"</h1>
+      <section class="item-card">
+        <h2 class="visually-hidden">Описание товара</h2>
+        <img class="card-image" src="" alt="Изображение карточки товара">
+        <h3 class="card-title">
+          Порхает как бабочка,<br>
+          жалит как пчела!</h3>
+          <p class="card-description">
+            Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+            мощным лазером, замаскированным под стандартную камеру.
+          </p>
+          <a class="card-details" href="">Подробнее</a>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <img class="item-image" src="" alt="Иконка товара в каталоге">
+            <a class="catalog-link" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="catalog-item">
+            <img class="item-image" src="" alt="Иконка товара в каталоге">
+            <a class="catalog-link" href="#">Моноподы для селфи</a>
+          </li>
+          <li class="catalog-item">
+            <img class="item-image" src="" alt="Иконка товара в каталоге">
+            <a class="catalog-link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="catalog-item">
+            <img class="item-image" src="" alt="Иконка товара в каталоге">
+            <a class="catalog-link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="catalog-item">
+            <img class="item-image" src="" alt="Иконка товара в каталоге">
+            <a class="catalog-link" href="#">Умные часы</a>
+          </li>
+          <li class="catalog-item">
+            <img class="item-image" src="" alt="Иконка товара в каталоге">
+            <a class="catalog-link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-title">Доставка</h3>
+            <p class="advantages-description">
+              Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно! Ведь<br>
+              мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+              <img class="description-image" src="" alt="Изображение доставки товаров">
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Гарантия</h3>
+            <p class="advantages-description">
+              Если из-за возгорания купленного у нас товара у вас<br>
+              сгорит дом — не переживайте, мы выдадим вам новый.<br>
+              Товар, не дом, конечно же.
+            </p>
+            <img class="description-image" src="" alt="Изображение гарантии на товары">
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Кредит</h3>
+            <p class="advantages-description">
+              Залезть в долговую яму стало проще! Кредитные<br>
+              консультанты подберут для вас наиболее выгодные<br>
+              условия кредита. Выгодные для банка, разумеется.
+            </p>
+            <img class="description-image" src="" alt="Изображение получения кредита на товары">
+          </li>
+        </ul>
+      </section>
+      <article class="delivery">
+        <h2 class="visually-hidden">Доставка редкого товара под заказ</h2>
+        <h3>Доставим редкий товар под заказ</h3>
+        <img class="delivery-image" src="" alt="Изображение доставки редких товаров">
+      </article>
+      <section class="company-info">
+        <h2 class="visually-hidden">Информация о нас и контакты</h2>
+        <article class="about">
+          <h2 class="visually-hidden">О нас</h2>
+          <h3 class="about-title">О нас</h3>
+          <p class="about-description">
+            Огромный выбор гаджетов не оставит равнодушным<br>
+            гика, который есть в каждом из нас.
+          </p>
+          <p class="about-description">
+            Мы можем доставить ваш товар в самые отдалённые<br>
+            уголки России транспортными компаниями:</p>
+             <ul class="delivery-list">
+               <li class="delivery-item">Меловые линии</li>
+               <li class="delivery-item">СДИК</li>
+               <li class="delivery-item">ТоксБерри</li>
+             </ul>
+             <a class="about-details" href="">Подробнее о нас</a>
+        </article>
+        <article class="contacts">
+          <h2 class="visually-hidden">Контакты и адрес</h2>
+          <h3 class="contacts-title">Контакты</h3>
+          <p class="contacts-description">
+            Вы можете забрать товар сами, заехав в наш офис.<br>
+            Заодно сможете проверить работоспособность покупки</p>
+            <h4>Интернет-магазин «Девайс»</h4>
+            <p class="contacts-description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <p class="contacts-description">+7 (812) 812-12-12</p>
+            <h4>Время работы</h4>
+            <p>пн—пт: с 10:00 до 22:00<br>
+              сб—вс: с 10:00 до 19:00</p>
+              <a class="contact-us" href="">Напишите нам</a>
+        </article>
+      </section>
+      <article class="mailing">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <h3 class="mailing-title">
+          Подпишитесь<br>
+          на рассылку</h3>
+          <p class="mailing-description">
+            Еженедельный дайджест с обзорами новинок,<br>
+            длительными тест-драйвами, распаковками, а также акции,<br>
+            спецпредложения и вот это вот всё.</p>
+      </article>
+    </main>
 
+    <footer class="main-footer">
+      <section>
+        <h2 class="visually-hidden">Адрес</h2>
+        <img class="footer-logo" src="" alt="Логотип интернет-магазина "Device">
+        <p class="address">
+          Санкт-Петербург, набережная<br>
+          реки Карповки, 5, литера П.</p>
+      </section>
+      <section>
+        <nav class="footer-navigation">
+          <ul class="footer-navigation-list">
+            <li class="footer-navigation-item">Доставка</li>
+            <li class="footer-navigation-item">Гарантия</li>
+            <li class="footer-navigation-item">Контакты</li>
+          </ul>
+        </nav>
+      </section>
+      <section class="social-media">
+        <ul class="social-media-list">
+          <li class="social-media-item">
+            <img class="facebook-icon" src="" alt="иконка Facebook">
+            <a href="https://www.facebook.com/">Facebook</a>
+          </li>
+          <li class="social-media-item">
+            <img class="instagram-icon" src="" alt="иконка Instagram">
+            <a href="https://www.instagram.com/">Instagram</a>
+          </li>
+          <li class="social-media-item">
+            <img class="twitter-icon" src="" alt="иконка Twitter">
+            <a href="https://twitter.com/">Twitter</a>
+          </li>
+        </ul>
+      </section>
+      <section class="phone">
+        <p>Тел.: +7 (812) 812-12-12</p>
+      </section>
+      <section class="">
+        <img src="logo" alt="Логотип HTML-Academy">
+      </section>
+    </footer>
   </body>
 </html>
