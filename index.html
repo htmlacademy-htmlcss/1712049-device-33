@@ -11,7 +11,7 @@
     <a class="navigation-logo" href="index.html">
       <img class="header-logo" src="#" alt="Логотип интернет-магазина Device.">
     </a>
-    <div class="search">
+    <div class="page-header-top">
       <form action="#" method="get">
         <label for="search-field">
           <span class="visually-hidden">Поиск по сайту</span>
@@ -82,54 +82,23 @@
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
           <button class="slider-pagination-button slider-pagination-button-current" type="button">
-            <span class="visually-hidden">1 фото карточки товара</span>
+            <span class="visually-hidden">1 слайд карточки товара</span>
           </button>
         </li>
         <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">2 фото карточки товара</span>
+            <span class="visually-hidden">2 слайд карточки товара</span>
           </button>
         </li>
         <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">3 фото карточки товара</span>
+            <span class="visually-hidden">3 слайд карточки товара</span>
           </button>
         </li>
       </ol>
-
-      <div class="slider-gallery">
-        <ul class="slider-gallery-list">
-          <li class="slider-gallery-item">
-            <img class="slider-image" src="#" alt="Квадрокоптер.">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото товара</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующее фото товара</span>
-            </button>
-          </li>
-          <li class="slider-gallery-item">
-            <img class="slider-image" src="#" alt="Часы.">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото товара</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующее фото товара</span>
-            </button>
-          </li>
-          <li class="slider-gallery-item">
-            <img class="slider-image" src="#" alt="Селфи-палка.">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото товара</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующее фото товара</span>
-            </button>
-          </li>
-        </ul>
-      </div>
-      <ol class="slider-list">
-        <li class="slider-item">
+      <ul class="slider-gallery-list">
+        <li class="slider-gallery-item">
+          <img class="slider-image" src="#" alt="Квадрокоптер.">
           <h3 class="slider-title">
             Порхает как бабочка,<br>
             жалит как пчела!</h3>
@@ -153,7 +122,8 @@
             </tr>
           </table>
         </li>
-        <li class="slider-item">
+        <li class="slider-gallery-item">
+          <img class="slider-image" src="#" alt="Фитнес-браслет.">
           <h3 class="slider-title">
             Худеем<br>
             правильно!</h3>
@@ -173,7 +143,8 @@
             </tr>
           </table>
         </li>
-        <li class="slider-item">
+        <li class="slider-gallery-item">
+          <img class="slider-image" src="#" alt="Селфи-палка.">
           <h3 class="slider-title">
             Делай селфи,<br>
             как Бен Стиллер!</h3>
@@ -201,7 +172,14 @@
             </tr>
           </table>
         </li>
-      </ol>
+      </ul>
+
+      <button class="slider-button slider-prev" type="button">
+        <span class="visually-hidden">Предыдущее фото товара</span>
+      </button>
+      <button class="slider-button slider-next" type="button">
+        <span class="visually-hidden">Следующее фото товара</span>
+      </button>
     </section>
 
     <section class="category">
@@ -209,49 +187,31 @@
       <ul class="category-list">
         <li class="category-item">
           <a class="category-link" href="catalog.html">
-            <div class="product-image">
-              <img class="item-image" src="#" alt="Иконка товара в каталоге.">
-            </div>
             <h3 class="item-name">Виртуальная реальность</h3>
           </a>
         </li>
         <li class="category-item">
           <a class="category-link" href="#">
-            <div class="product-image">
-              <img class="item-image" src="#" alt="Иконка товара в каталоге.">
-            </div>
             <h3 class="item-name">Моноподы для селфи</h3>
           </a>
         </li>
         <li class="category-item">
           <a class="category-link" href="#">
-            <div class="product-image">
-              <img class="item-image" src="#" alt="Иконка товара в каталоге.">
-            </div>
             <h3 class="item-name">Экшн-камеры</h3>
           </a>
         </li>
         <li class="category-item">
           <a class="category-link" href="#">
-            <div class="product-image">
-              <img class="item-image" src="#" alt="Иконка товара в каталоге.">
-            </div>
             <h3 class="item-name">Фитнес-браслеты</h3>
           </a>
         </li>
         <li class="category-item">
           <a class="category-link" href="#">
-            <div class="product-image">
-              <img class="item-image" src="#" alt="Иконка товара в каталоге.">
-            </div>
             <h3 class="item-name">Умные часы</h3>
           </a>
         </li>
         <li class="category-item">
           <a class="category-link" href="#">
-            <div class="product-image">
-              <img class="item-image" src="#" alt="Иконка товара в каталоге.">
-            </div>
             <h3 class="item-name">Квадрокоптеры</h3>
           </a>
         </li>
@@ -263,17 +223,17 @@
         <ul class="advantages-button-list">
           <li class="advantages-button-item">
             <button class="button advantages-button" type="button">
-              <h3 class="advantages-title">Доставка</h3>
+              Доставка
             </button>
           </li>
           <li class="advantages-button-item">
             <button class="button advantages-button" type="button">
-              <h3 class="advantages-title">Гарантия</h3>
+              Гарантия
             </button>
           </li>
           <li class="advantages-button-item">
             <button class="button advantages-button" type="button">
-              <h3 class="advantages-title">Кредит</h3>
+              Кредит
             </button>
           </li>
         </ul>
@@ -334,11 +294,11 @@
           Заодно сможете проверить работоспособность покупки</p>
         <h3>Интернет-магазин «Девайс»</h3>
         <p class="contacts-description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        <p class="contacts-description">+7 (812) 812-12-12</p>
+        <p class="contacts-description" href="tel:+78128121212">+7 (812) 812-12-12</p>
         <h4>Время работы</h4>
         <p>пн—пт: с 10:00 до 22:00<br>
           сб—вс: с 10:00 до 19:00</p>
-        <button class="button button-contacts" href="#">Напишите нам</button>
+        <button class="button contacts-button" href="#">Напишите нам</button>
       </section>
     </div>
     <section class="mailing">
@@ -403,7 +363,7 @@
         </li>
       </ul>
     </section>
-    <a class="contacts-phone" href="tel:78128121212">
+    <a class="contacts-phone" href="tel:+78128121212">
       Тел.: +7 (812) 812-12-12
     </a>
     <a class="footer-logo-academy" href="#">
