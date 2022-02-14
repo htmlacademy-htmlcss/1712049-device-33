@@ -10,17 +10,25 @@
 <body>
   <header class="main-header">
     <a class="navigation-logo" href="index.html">
-      <img class="header-logo" src="#" alt="Логотип интернет-магазина Device">
+      <img class="header-logo" src="#" alt="Логотип интернет-магазина Device.">
     </a>
-    <div class="user-actions">
+    <div class="page-header-top">
       <form action="#" method="get">
-        <input type="text" name="search" id="search-field" value="Текст поиска">
-        <input type="submit" value="Найти">
+        <label for="search-field">
+          <span class="visually-hidden">Поиск по сайту</span>
+          <input type="text" name="search" id="search-field" placeholder="Текст поиска">
+        </label>
       </form>
+      <button class="button">Найти</button>
       <ul class="user-actions-list">
         <li class="user-actions-item">
           <a class="user-actions-link" href="#">
-            Войти
+            Коля Петухов
+          </a>
+        </li>
+        <li class="user-actions-item">
+          <a class="user-actions-link" href="#">
+            Выйти
           </a>
         </li>
         <li class="user-actions-item">
@@ -37,15 +45,27 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Каталог товаров</a>
-            <select name="catalog" id="catalog-field">
-              <option value="virtual-reality">Виртуальная реальность</option>
-              <option value="selfie-monopods">Моноподы для cелфи</option>
-              <option value="action-cameras">Экшн-камеры</option>
-              <option value="fitness-trackers">Фитнес-браслеты</option>
-              <option value="smart-watches">Умные часы</option>
-              <option value="quadcopters">Квадрокоптеры</option>
-            </select>
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            <ul class="catalog-list">
+              <li class="catalog-item">
+                <a class="catalog-item-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="catalog-item">
+                <a class="catalog-item-link" href="#"> Моноподы для cелфи</a>
+              </li>
+              <li class="catalog-item">
+                <a class="catalog-item-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="catalog-item">
+                <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="catalog-item">
+                <a class="catalog-item-link" href="#">Умные часы</a>
+              </li>
+              <li class="catalog-item">
+                <a class="catalog-item-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="delivery.html">Доставка</a>
@@ -63,7 +83,8 @@
 
   <main class="main-inner">
     <header class="inner-header">
-      <h1 class="inner-header-title">Моноподы для селфи</h1>
+      <h1 class="visually-hidden">Каталог товаров интернет-магазина "Device"</h1>
+      <h2 class="inner-header-title">Моноподы для селфи</h2>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -224,17 +245,25 @@
     <section>
       <h2 class="visually-hidden">Адрес</h2>
       <a class="footer-logo-link" href="#">
-        <img class="footer-logo" src="#" alt="Логотип интернет-магазина " Device">
+        <img class="footer-logo" src="#" alt="Логотип интернет-магазина Device.">
       </a>
-      <p class="footer-address">
-        Санкт-Петербург, набережная<br>
-        реки Карповки, 5, литера П.</p>
+      <address class="footer-address">
+        <p class="footer-address-text"> Санкт-Петербург, набережная<br>
+          реки Карповки, 5, литера П.
+        </p>
+      </address>
     </section>
     <section class="footer-services">
       <ul class="footer-services-list">
-        <li class="footer-services-item">Доставка</li>
-        <li class="footer-services-item">Гарантия</li>
-        <li class="footer-services-item">Контакты</li>
+        <li class="footer-services-item">
+          <a class="footer-services-link" href="#">Доставка</a>
+        </li>
+        <li class="footer-services-item">
+          <a class="footer-services-link" href="#">Гарантия</a>
+        </li>
+        <li class="footer-services-item">
+          <a class="footer-services-link" href="#">Контакты</a>
+        </li>
       </ul>
     </section>
     <section class="footer-social">
@@ -257,8 +286,8 @@
         </li>
       </ul>
     </section>
-    <a class="footer-phone" href="#">
-      <p>Тел.: +7 (812) 812-12-12</p>
+    <a class="contacts-phone" href="tel:+78128121212">
+      Тел.: +7 (812) 812-12-12
     </a>
     <a class="footer-logo-academy" href="#">
       <img src="logo" alt="Логотип HTML-Academy">
