@@ -17,10 +17,10 @@
       <form action="#" method="get">
         <label for="search-field">
           <span class="visually-hidden">Поиск по сайту</span>
-          <input type="text" name="search" id="search-field" placeholder="Текст поиска">
+          <input class="header-search-text" type="text" name="search" id="search-field" placeholder="Текст поиска">
         </label>
       </form>
-      <button class="button">Найти</button>
+      <button class="header-search-button">Найти</button>
       <ul class="user-actions-list">
         <li class="user-actions-item">
           <a class="user-actions-link" href="#">
@@ -101,10 +101,10 @@
 
     <section class="catalog-products">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-      <h3>Фильтр:</h3>
+      <h3 class="catalog-filter-title">Фильтр:</h3>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Цвет</legend>
+          <legend class="catalog-filter-name">Цвет</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
@@ -140,7 +140,7 @@
         </fieldset>
 
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Bluetooth</legend>
+          <legend class="catalog-filter-name">Bluetooth</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
@@ -160,7 +160,7 @@
       </form>
 
       <!-- Сортировка -->
-      <h3>Сортировка:</h3>
+      <h3 class="catalog-filter-title">Сортировка:</h3>
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Популярные</option>
         <option value="expensive">Дорогие</option>
