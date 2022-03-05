@@ -31,7 +31,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -57,6 +65,17 @@ body {
   background-color: #ffe17f;
 }
 
+.main-header-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.header-logo-search {
+  width: 557px;
+  margin-right: 27px;
+}
+
 /* Button */
 .header-search-button {
   font-family: "Rubik", sans-serif;
@@ -74,6 +93,11 @@ body {
   text-transform: none;
 }
 
+.user-actions {
+  width: 483px;
+  margin-left: auto;
+}
+
 .user-actions-list {
   list-style-type: none;
 }
@@ -83,8 +107,22 @@ body {
   text-decoration: none;
 }
 
+.navigation {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .navigation-list {
+  width: 592px;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.navigation-link-catalog {
+  width: 293px;
+  margin-right: auto;
 }
 
 .navigation-link {
@@ -97,21 +135,28 @@ body {
   text-transform: uppercase;
 }
 
-.catalog-list {
-  list-style-type: none;
-
+.slider {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px;
 }
 
-.catalog-item-link {
-  font-size: 16px;
-  line-height: 18px;
-  color: #000000;
-  text-decoration: none;
+.slider-image {
+  width: 560px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .main-index {
   color: #000000;
   background-color: #ffffff;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 /* Title */
@@ -142,7 +187,15 @@ table td {
 
 /* Category */
 .category-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.category-item {
+  width: 160px;
 }
 
 .category-link {
@@ -150,6 +203,21 @@ table td {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+}
+
+/* Advantages */
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px;
+}
+
+.advantages-button-slider {
+  width: 280px;
+}
+
+.advantages-slider {
+  width: 694px;
 }
 
 .advantages-button-list {
@@ -181,6 +249,8 @@ table td {
 }
 
 .delivery-link h2 {
+  width: 1160px;
+  margin: 0 auto;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   line-height: 23px;
@@ -189,10 +259,24 @@ table td {
   letter-spacing: 0.2em;
 }
 
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px;
+}
+
+.about {
+  width: 520px;
+}
+
 .about-title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
+}
+
+.contacts {
+  width: 532px;
 }
 
 .contacts-title {
@@ -229,14 +313,27 @@ table td {
   color: #444444;
 }
 
+.mailing {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1160px;
+}
+
 .mailing-title {
+  width: 348px;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
 }
 
 .mailing-description {
+  width: 560px;
   color: #444444;
+}
+
+.mailing-form form {
+  width: 810px;
 }
 
 #email-field {
@@ -250,10 +347,27 @@ table td {
 }
 
 .mailing-benefit {
+  width: 160px;
   color: #444444;
 }
 
 /* Footer */
+.main-footer-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.footer-logo-address {
+  width: 239px;
+  margin-right: 112px;
+}
+
+.footer-phone {
+  margin-left: auto;
+  max-width: 175px;
+}
+
 .footer-address-text {
   font-style: normal;
   font-weight: 400;
@@ -287,7 +401,56 @@ table td {
   text-decoration-line: underline;
 }
 
+
 /* Catalog */
+
+
+/* Breadcrumbs */
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.catalog-filter {
+  width: 220px;
+  margin-right: 40px;
+}
+
+.catalog-right-column {
+  width: 840px;
+}
+
+.catalog-list {
+  list-style-type: none;
+
+}
+
+.catalog-item-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
 
 .user-actions-link__logout {
   opacity: 0.3;
@@ -304,25 +467,10 @@ table td {
   color: #000000;
 }
 
-/* Breadcrumbs */
-.breadcrumbs {
-  list-style-type: none;
+.catalog-products {
+  display: flex;
 }
 
-/* Link */
-.breadcrumbs-link {
-  font-size: 16px;
-  line-height: 19px;
-  text-decoration: none;
-  color: #000000;
-}
-
-.breadcrumbs-item {
-  font-size: 16px;
-  line-height: 19px;
-}
-
-/* Title */
 .catalog-filter-title {
   font-weight: bold;
   line-height: 20px;
